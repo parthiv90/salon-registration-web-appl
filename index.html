@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Salon Booking | www.BookMyGlam.com</title>
+
+    <!-- Add styling file link -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/css/menu.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/phone.css" />
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="start-content">
+        <!-- Start header section -->
+        <div class="header-section">
+          <header class="header">
+            <div class="container">
+              <nav class="navbar">
+                <h1>
+                  <a href="./index.html" class="brand">Welcome To BookMyGlam</a>
+                </h1>
+                <button type="button" class="burger" id="burger">
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+                </button>
+                <span class="overlay" id="overlay"></span>
+                <div class="menu" id="menu">
+                  <ul class="menu-block">
+                    <li class="menu-item">
+                      <a class="menu-link" href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                      <a class="menu-link" href="price.html">Price</a>
+                    </li>
+                    <li class="menu-item">
+                      <a class="menu-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                      <a
+                        class="menu-link book-online-button"
+                        href="./login.html"
+                        >Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+        </div>
+        <!-- End header section -->
+
+        <!-- Start Page hero section -->
+        <div class="hero-bg-image">
+          <section class="hero-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="hero-content-wrapping">
+                    <h2>Book Your Nearby<span> Salon</span></h2>
+                    <p>
+                      we're dedicated to bringing the salon experience directly
+                      to your fingertips. Say goodbye to long waits and
+                      frustrating phone calls; with our platform, you can
+                      effortlessly book the beauty services you need, when you
+                      need them. We offer a wide range of salon services to help
+                      you look and feel your best.
+                    </p>
+                  </div>
+                  <div class="hero-button-wrapping">
+                    <!-- <button class="call-phone"><a href="tel:07595183489">8153832346</a></button> -->
+                    <button class="book-online-btn">
+                      <a href="salonreg.html">Book Online</a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-6"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- End Page hero section -->
+
+        <!-- Start Footer section -->
+        <footer class="FooterSection">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footerLeftContent">
+                  <p>BookMyGlam | All rights reserved</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="footerRightContent">
+                  <h4>
+                    Design & Developed by <span>BookMyGlam pvt.ltd.</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer section -->
+      </div>
+    </div>
+
+    <!-- Start add scripting link -->
+    <script src="asset/js/menu.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <!-- End scripting link -->
+    <!-- Merged JavaScript code -->
+    <script>
+      // Merged JavaScript functions
+      function validateForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "") {
+          document.getElementById("username").classList.add("invalid");
+          return false;
+        }
+
+        if (password === "") {
+          document.getElementById("password").classList.add("invalid");
+          return false;
+        }
+
+        // Additional validation logic can be added here
+
+        // If all validations pass, the form can be submitted
+        return true;
+      }
+    </script>
+  </body>
+</html>

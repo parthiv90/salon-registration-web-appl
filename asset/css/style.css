@@ -1,0 +1,300 @@
+    :root {
+        --color-black: #000;
+        --color-white: #fff;
+    }
+    body {
+        font-family: "Poppins", Sans-serif;;
+        color: var(--color-black);
+        background: var(--color-white);
+    }
+
+    /* Start styling hero section*/
+    .hero-bg-image {
+        background-image: url("/image1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero-section {
+        width: auto;    
+        height: 500px;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, #000000 38%, #F50B4505 100%);
+        opacity: 0.98;
+        margin-top: 65px;
+        z-index: 3;
+    }
+
+    .hero-content-wrapping {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    .hero-content-wrapping h2{
+        font-size: 42px;
+        font-family:inherit;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .hero-content-wrapping h2 span {
+        color: #D69D2B;
+    }
+
+    .hero-content-wrapping p{
+        font-size: 18px;
+        font-family: inherit;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .hero-button-wrapping {
+        padding: 10px 5px;
+    }
+
+    .hero-button-wrapping .call-phone a{
+        color: var(--color-white);
+        font-size: 18px;
+        border: 1px solid #D69D2B;
+        padding: 10px 20px;
+    }
+
+    .hero-button-wrapping .book-online-btn a{
+        color: var(--color-white);
+        font-size: 18px;
+        border: 2px solid #ffc144;
+        background-color: #bb800b;
+        padding: 10px 25px;
+        text-transform: capitalize;
+    }
+
+    .hero-button-wrapping .book-online-btn a:hover{
+        color: var(--color-black);
+        background-color: var(--color-white);
+    }
+
+    /* End styling hero section*/
+
+    /* Start main content */
+    .main-content {
+        padding: 70px 100px;
+    }
+
+    table tr{
+        border-collapse: collapse!important;
+        border-width: 1px!important;
+        border-color: #000!important;
+        border-style: solid;
+    }
+
+    table tr td{
+        border-collapse: collapse!important;
+        border-width: 1px!important;
+        border-color: #000!important;
+        border-style: solid;
+    }
+
+    .TabelBody tr th {
+        background-color: #D69D2B;
+    }
+    .TabelBody .tableTitle h2 {
+        font-size: 28px;
+        font-weight: 600;
+        font-family: inherit;
+        letter-spacing: 0.5px;
+        color: var(--color-black);
+        text-align: left;
+        padding: 15px 10px;
+        color: var(--color-white);
+    }
+
+    .TabelBody tr td {
+        padding: 10px 25px;
+    }
+
+    .TabelBody td.tableDay {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-family: inherit;
+    }
+
+    .TabelBody td.tableTime {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        font-family: inherit;
+    }
+
+    .buttonOnlineBooking {
+        background-color: #D69D2B;
+        text-align: center;
+        padding: 12px 20px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .buttonOnlineBooking button a {
+        color: var(--color-white);
+        font-size: 16px;
+        font-weight: 600;
+        font-family: inherit;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        transition: 0.5s ease-in;
+    }
+
+    .buttonOnlineBooking button a:hover {
+        color: var(--color-black);
+    }
+
+    .rightImages {
+        padding-left: 10px;
+    }
+
+    .rightImages img {
+        width: auto;
+        height: 500px;
+        transition: 0.2s ease;
+    }
+
+    .rightImages img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Start footer section styling */
+    .FooterSection {
+        background-color: var(--color-black);
+    }
+
+    .footerLeftContent p {
+        color: var(--color-white);
+        font-size: 14px;
+        font-family: inherit;
+        font-weight: 400;
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .footerRightContent h4 {
+        color: var(--color-white);
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: 600;
+        padding-top: 20px;
+        text-align: right;
+    }
+    .footerRightContent h4 span{
+        color: #D69D2B;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: 600;
+        padding-top: 20px;
+        text-align: right;
+    }
+
+    /* Began price page styling */
+    .PriceMainContent {
+        margin-top: 100px;
+        padding: 70px 0px;
+    }
+
+    .PriceListLeft {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px 50px;
+    }
+
+    .PriceMenuItem {
+        border: 1px solid #F2E1BD;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        width: auto;
+        height: 50px;
+        margin: 8px 0px;
+    }
+
+    .PriceMenuTitle h4 span{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: #000;
+        text-transform: capitalize;
+    }
+
+    .MenuItemPrice span{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: #000;
+        text-transform: capitalize;
+    }
+
+    .PriceOnlineBooking {
+        background-color: #D69D2B;
+        text-align: center;
+        padding: 12px 20px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .PriceOnlineBooking button a {
+        color: var(--color-white);
+        font-size: 16px;
+        font-weight: 600;
+        font-family: inherit;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        transition: 0.5s ease-in;
+    }
+
+    .PriceOnlineBooking button a:hover {
+        color: var(--color-black);
+    }
+    .PricerRightImages img {
+        width: auto;
+        height: 400px;
+        padding-left: 50px;
+        transition: 0.2s ease;
+    }
+
+    .PricerRightImages img:hover {
+        transform: scale(1.1);
+    }
+
+
+    /* Start Gallery page stylign */
+    .GalleryMainContent {
+        margin-top: 100px;
+        padding: 70px 0px;
+    }
+
+    .GalleryDiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ImagesListing {
+        margin: 5px 5px;
+        border: 1px solid #D69D2B;
+    }
+
+    .ImagesListing img {
+        width: auto;
+        height: 300px;
+    }
+    /* Start solve this page responsive isshue */
+    @media only screen and (max-width: 767px) and (min-width: 300px){
+        .main-content {
+            padding: 50px 10px;
+        }
+        .TabelBody .tableTitle h2 {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 12px 8px;
+        }
+    }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("best.png"); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+      }
+
+      .container {
+        background-color: black; /* Add a semi-transparent black overlay */
+        border: 5px solid black;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px black;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 400px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      input[type="datetime-local"],
+      button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        background-color: white;
+        color: #fff;
+        margin-top: 5px;
+      }
+
+      button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      #salon {
+        width: 99%;
+        padding: 6px;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+        margin-top: 5px;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+      #username,
+      #email,
+      #salonTiming {
+        width: 95%;
+        padding: 6px;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+        margin-top: 5px;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Salon Registration Form</h2>
+      <form action="./submit.php" method="post" id="registrationForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="salonName">Salon Name:</label>
+          <select id="salon" name="salon" required>
+            <option value="5 Star Salon">5 Star Salon</option>
+            <option value="Aam Admi Salon">Aam Admi Salon</option>
+            <option value="Glamour Glow Salon">Glamour Glow Salon</option>
+            <option value="Saffron Glow Salon">Saffron Glow Salon</option>
+            <option value="Elegant Edge Salon">Elegant Edge Salon</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="salonTiming">Salon Date:</label>
+          <input type="date" id="salonTiming" name="salondate" required />
+        </div>
+
+        <div class="form-group">
+          <label for="salonName">Salon Timing:</label>
+          <select id="salon" name="salontime" required>
+            <option value="">Select Timing</option>
+            <option value="7:00 AM">7:00 AM</option>
+            <option value="8:00 AM">8:00 AM</option>
+            <option value="9:00 AM">9:00 AM</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+            <option value="7:00 PM">7:00 PM</option>
+            <option value="8:00 PM">8:00 PM</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

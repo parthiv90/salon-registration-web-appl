@@ -1,0 +1,95 @@
+
+/* Media queries */
+@media only screen and (max-width: 991px) {
+    .header {
+        padding: 10px;
+    }
+
+    .menu-item {
+        margin-right: 10px;
+    }
+
+    .hero-content-wrapping {
+        padding: 0 20px;
+    }
+
+    .hero-content-wrapping h2 {
+        font-size: 30px;
+    }
+
+    .hero-content-wrapping p {
+        font-size: 16px;
+    }
+
+    .call-phone a, .book-online-btn a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        z-index: 1100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    .menu-block {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .hero-content-wrapping h2 {
+        font-size: 24px;
+    }
+
+    .hero-content-wrapping p {
+        font-size: 14px;
+    }
+
+    .call-phone a, .book-online-btn a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
